@@ -27,7 +27,7 @@ function Navbar() {
       <div className="text-xl font-bold flex items-center space-x-2 group transition duration-300 p-2 rounded-md"  data-aos="fade-right">
         {/* Logo */}
         <img
-          className="w-16 h-auto transition-transform duration-300 group-hover:scale-90"
+          className="w-16 h-auto animate-logo-fade-in transition-transform duration-300 group-hover:scale-90"
           src="/techonsy_logo.jpg"
           alt="Techonsy Logo"
         />
