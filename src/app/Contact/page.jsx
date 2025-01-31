@@ -80,7 +80,7 @@ export default function ContactPage() {
                   href="mailto:contact@yourcompany.com"
                   className="text-blue-500 underline ml-2"
                 >
-                  contact@yourcompany.com
+                  contact@techonsy.com
                 </a>
               </p>
               <p className="text-gray-400 font-sans text-lg">
