@@ -39,7 +39,7 @@ function Navbar() {
         </Link>
       </div>
 
-      <div className="hidden md:flex space-x-6">
+      <div className="hidden md:flex space-x-6" data-aos="fade-down">
         {navItems.map((item) => (
           <Link key={item.name} href={item.path} legacyBehavior>
             <a
