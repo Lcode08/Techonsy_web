@@ -1,11 +1,16 @@
+"use client";
 import React, { useEffect, useState } from 'react';
 import Link from "next/link";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function Navbar() {
   const [activePath, setActivePath] = useState('');
 
   useEffect(() => {
     setActivePath(window.location.pathname);
+    Aos.init({ duration: 2000 });
+      
   }, []);
 
   const navItems = [
@@ -16,12 +21,13 @@ function Navbar() {
     { name: 'Contact', path: '/Contact' },
   ];
 
+  
   return (
     <nav className="flex items-center justify-between px-6 py-4 bg-gray-900 text-white sticky top-0 z-50 place-items-center">
-      <div className="text-xl font-bold flex items-center space-x-2 group transition duration-300 p-2 rounded-md">
+      <div className="text-xl font-bold flex items-center space-x-2 group transition duration-300 p-2 rounded-md"  data-aos="fade-right">
         {/* Logo */}
         <img
-          className="w-16 h-auto animate-logo-fade-in transition-transform duration-300 group-hover:scale-90"
+          className="w-16 h-auto transition-transform duration-300 group-hover:scale-90"
           src="/techonsy_logo.jpg"
           alt="Techonsy Logo"
         />
